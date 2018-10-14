@@ -2,14 +2,14 @@
 
 ## Git usage reminders
 
-Broadly speaking, there are two classes of `git` commands that we have introduced in this short course. The first deals with actions (staging, committing, and pushing to a remote server -- e.g. GitHub). The second set is diagnostic (what is going on in this repository--what is its status? what differences have I made for files that are tracked? what differences are staged?).
+Broadly speaking, there are two classes of `git` commands that we have introduced in this short course. The first deals with actions (staging, committing, and pushing to a remote server--e.g. GitHub). The second set is diagnostic (What is going on in this repository--what is its status? What differences have I made for files that are tracked? What differences are staged?).
 
 ### Setting up a repository using Git and GitHub
 
 When you have a new project (such as a new manuscript, thesis chapter, research project, lab protocol, etc.), and seek to set up a new Git repository for this project (which will encompass a parent folder, potential sub-folders, and files), we recommend the following steps:
 
 * Go online to GitHub.com and clicking on the `+` sign in the upper right and select `New Repository` (not `Import Repository`, `New Gist`, or `New Organization`).
-    + ![NewRepo](images/CreateNewRepo.png)
+    + ![NewRepo](images/CreateNewRepo.png?raw=true?raw=true)
 * Give your repository an informative name and a brief description. This description will be the initial `README.md` file (and this `README` file is what people see when they navigate to your repository, assuming that it is public). Check the box for `Initialize this repository with a README` and make selections for the drop-down menus in `Add .gitignore` (you can search for popular languages like R, or python) as well as `Add a license` (the `(i)` icon next to the `Add a license` drop-down menu provides information on different options, though for academics, `GNU General Public License v 3.0` and `MIT License` are generally popular).
 * Clone the repository from GitHub to your local machine. The steps differ based on your client for Git.
     + If you use terminal to execute local Git commands, navigate to the `Clone or download` drop-down menu in your GitHub repository and copy the `Clone with HTTPS` address (e.g. `https://github.com/EEB504/rmarkdown-website-examples.git`).
@@ -66,12 +66,12 @@ FMI:
 1. Navigate to https://github.com/EEB504/rmarkdown-website-examples
     * Note that steps 1-4 are **all** performed online on GitHub
 2. Fork this repository (`rmarkdown-website-examples`)
-    * ![ForkIcon](images/forkIcon.png)
+    * ![ForkIcon](images/forkIcon.png?raw=true)
 3. After forking, rename this repository
     * For example, you may want to name the repository `YOURNAME.github.io`; or `YOURNAME`; or `YOURNAME-website`, etc.
-    * ![Renaming](images/renamingRepo.png)
+    * ![Renaming](images/renamingRepo.png?raw=true)
 4. Obtain the Clone link
-    * ![CloneLink](images/gitCloneLink.png)
+    * ![CloneLink](images/gitCloneLink.png?raw=true)
 
 ### Part 2: Cloning the repository from GitHub to your local machine
 
@@ -83,10 +83,10 @@ FMI:
         * For instance, for the EEB504/rmarkdown-website-examples repository, this would look like `$ git clone https://github.com/EEB504/rmarkdown-website-examples.git`
     * In a local Git client, note that the commands will resemble these from GitHub desktop:
         * Either go to `File -> Clone Repository` or use the `+` icon and select `clone`
-            + ![CloneIcon](images/GitHubDeskClone.png)
+            + ![CloneIcon](images/GitHubDeskClone.png?raw=true)
         * Subsequently, select where you want this repository to be housed on your local machine
-            + ![DirectorySelection](images/GitHubDeskDir.png)
-        * You should then see the repository on your local machine: ![LocalRepo](images/GitHubDeskRepo.png)
+            + ![DirectorySelection](images/GitHubDeskDir.png?raw=true)
+        * You should then see the repository on your local machine: ![LocalRepo](images/GitHubDeskRepo.png?raw=true)
 
 ### Part 3: Building an initial version of your own website
 
@@ -98,27 +98,27 @@ If you only have the R Console installed, these files will open but your workflo
 
 8. Note that the `.Rproj` file will let you open a `R Project` in `RStudio` where you can edit the website contents.
     * **Before** you open the `.Rproj` file, you may want to rename it so that its name matches the name of your repository. For instance, here is an example where I am re-naming `rmarkdown-website-examples.Rproj` to `test-website.Rproj` in `Finder` on my Mac.
-    * ![renameRproj](images/RprojRenaming.png)
+    * ![renameRproj](images/RprojRenaming.png?raw=true)
     * It isn't necessary that you do this, but it may be useful for future reference.
 9. Open (double click) the file `FILENAME.Rproj` (for example, on my machine, it has been renamed `test-website.Rproj`); this will open RStudio (if it is installed on your machine).
     * If you renamed the `.Rproj` file, perform these next steps:
     * In RStudio, you should now see a small, vertical `Git` icon. Click on this as you will need to git stage and commit the fact that you renamed the `.Rproj` file.
-    * ![GitIconRStudio](images/GitIconRStudio.png)
+    * ![GitIconRStudio](images/GitIconRStudio.png?raw=true)
     * Perform the equivalent of the `git add` and `git rm` (remove) command in the Git console in RStudio by clicking on the two boxes on the left-hand side.
-    * ![GitAddRStudio](images/RprojRenamingGitStaging.png); this will subsequently produce this image:
-    * ![GitRename](images/RprojRenamedRStudioGit.png)
-    * Write an informative `git commit` message ![GitCommit](images/RprojRenamedCommitMsg.png)
-    * This will open a shell that displays what is happening when you click on the `Commit` button ![RGitCommitShell](images/RStudioCommitMessage.png)
+    * ![GitAddRStudio](images/RprojRenamingGitStaging.png?raw=true); this will subsequently produce this image:
+    * ![GitRename](images/RprojRenamedRStudioGit.png?raw=true)
+    * Write an informative `git commit` message ![GitCommit](images/RprojRenamedCommitMsg.png?raw=true)
+    * This will open a shell that displays what is happening when you click on the `Commit` button ![RGitCommitShell](images/RStudioCommitMessage.png?raw=true)
 10. Begin website development!
 11. Make changes to `about.Rmd` to change your `About Me` page.
     * For example, I added the line `Test, test` to the bottom of the `about.Rmd` file.
-    * ![EditedAboutMe](images/RStudioCommitMessage.png)
+    * ![EditedAboutMe](images/RStudioCommitMessage.png?raw=true)
 12. Before we can see any of these changes reflected online, we need to go into the R console (in my version of RStudio, this is in the upper right-hand corner) and use the command `rmarkdown::render_site()` to generate updated `HTML` pages. (This calls the command `render_site()` from the `rmarkdown` package).
     * Note that you would need to have `rmarkdown` installed as a package.
     * If you do not have this package on your local machine, perform this command in the R console: `install.packages("rmarkdown")`. Once you have a package installed, you do not need to re-install it (unless you update your version of `R`).
-    * ![rmarkdownrender](images/rmarkdownrendersite.png)
-13. Perform the `git add` (staging; this is done by clicking the box for each file under the left-hand `Staged` column) and `git commit` commands in the `Git` console in RStudio. ![GitCommit](images/AboutCommitRStudio.png)
-14. Now that you have completed a set of changes for your website, select `git push` in the `RStudio Git` console. ![GitPushRStudio](images/PushRStudio.png)
+    * ![rmarkdownrender](images/rmarkdownrendersite.png?raw=true)
+13. Perform the `git add` (staging; this is done by clicking the box for each file under the left-hand `Staged` column) and `git commit` commands in the `Git` console in RStudio. ![GitCommit](images/AboutCommitRStudio.png?raw=true)
+14. Now that you have completed a set of changes for your website, select `git push` in the `RStudio Git` console. ![GitPushRStudio](images/PushRStudio.png?raw=true)
 
 ##### Part 3, Version 2, Using a text editor and an R script
 
@@ -142,9 +142,9 @@ If you only have the R Console installed, these files will open but your workflo
 ### Part 4: Telling GitHub to host your website
 
 1. In your GitHub account, go to the repository associated with your website. For instance, this may look like `https://github.com/EEB504/rmarkdown-website-examples` (for you, this will look like: `https://github.com/YOURNAME/WebsiteRepoName`)
-2. Navigate to `Settings` ![GitHubSettings](images/GitHubSettingsMenu.png)
+2. Navigate to `Settings` ![GitHubSettings](images/GitHubSettingsMenu.png?raw=true)
 3. Scroll down to `GitHub Pages`. Initially, it will probably state that `GitHub Pages is currently disabled. Select a source below to enable GitHub Pages for this repository.`
-    * ![NoPages](images/GitHubNoPage.png)
+    * ![NoPages](images/GitHubNoPage.png?raw=true)
 4. Click on the drop-down menu initially called `None` and select `master branch /docs folder` to have the website deployed!
 
 ### Part 5: Further improvements to your website
