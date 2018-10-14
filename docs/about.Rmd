@@ -2,4 +2,4 @@
 title: "About This Website"
 ---
 
-More about this website.
+This is my homepage. Welcome!
