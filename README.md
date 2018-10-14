@@ -1,5 +1,7 @@
 # Making websites with RMarkdown and GitHub
 
+The example website for this course is located at https://eeb504.github.io/rmarkdown-website-examples/index.html.
+
 ## Git usage reminders
 
 Broadly speaking, there are two classes of `git` commands that we have introduced in this short course. The first deals with actions (staging, committing, and pushing to a remote server--e.g. GitHub). The second set is diagnostic (What is going on in this repository--what is its status? What differences have I made for files that are tracked? What differences are staged?).
